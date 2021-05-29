@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: fit-content;
+}
+
+header {
+  background-color: bisque;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  z-index: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+header ul li {
+  text-align: center;
+  width: 33.33%;
+}
+
+header ul li a {
+  display: block;
+  width: auto;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+header li:hover {
+  background-color: bisque;
+}
+
+header nav {
+  background-color: cornsilk;
+}
+
+footer {
+  background-color: bisque;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 133px;
+  background-color: antiquewhite;
+}
+
+main div {
+  padding: 30px 80px;
+}
+
+main div h1 {
+  text-align: center;
+  font-family: cursive;
+}
+
+main div p {
+  padding-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+figure {
+  float: left;
+}
+
+img {
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px black;
+  z-index: 1;
+}
+
+img:hover {
+  animation: scale;
+  animation-duration: 2s;
+  transform: scale(1.6);
+  transition: all 0.5s;
+}
+
+img:not(:hover) {
+  transition: all 0.5s;
+}
+
+li:hover {
+  animation-duration: 0.5s;
+  animation-name: color;
+}
+
+@keyframes color {
+  from {
+    background-color: cornsilk;
+  }
+
+  to {
+    background-color: bisque;
+  }
+}
+
+li:not(:hover) {
+  animation-duration: 0.5s;
+  animation-name: color-back;
+}
+
+@keyframes color-back {
+  from {
+    background-color: bisque;
+  }
+  to {
+    background-color: cornsilk;
+  }
+}
+
+.choosen-tab {
+  background-color: bisque;
+}
+
+.choosen-tab:not(:hover) {
+  animation: none;
+}
+
+.choosen-tab:hover {
+  animation: none;
+}
+
+main p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 1400px) {
+  main div {
+    display: flex;
+    flex-direction: column;
+  }
+  figure {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main div {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main div {
+    display: flex;
+  }
+}
