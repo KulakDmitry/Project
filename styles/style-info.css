@@ -56,7 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 133px;
-  background-color: antiquewhite;
+  background-image: url(../pictures/background.jpg);
 }
 
 main div {
@@ -162,7 +162,7 @@ figcaption {
 
 figure:hover figcaption {
   opacity: 1;
-  transition: all 1.4s;
+  transition: all 0.8s;
 }
 
 @media screen and (min-width: 1920px) {

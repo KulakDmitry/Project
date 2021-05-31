@@ -60,7 +60,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 133px;
-  background-color: antiquewhite;
+  background-image: url(../pictures/background.jpg);
 }
 
 main div {
