@@ -17,6 +17,7 @@ header {
 }
 
 header h1 {
+  font-family: comic sans ms;
   text-align: center;
 }
 
@@ -45,6 +46,10 @@ header li:hover {
   background-color: bisque;
   animation-duration: 0.5s;
   animation-name: color;
+}
+
+header a:hover {
+  color: rgb(250 100 111);
 }
 
 header nav {
@@ -79,6 +84,7 @@ main div h1 {
 }
 
 main div p {
+  font-size: 17px;
   padding-top: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -142,6 +148,10 @@ header li:not(:hover) {
 
 .choosen-tab {
   background-color: bisque;
+}
+
+.choosen-tab > a {
+  color: rgb(250 100 111);
 }
 
 .choosen-tab:not(:hover) {
